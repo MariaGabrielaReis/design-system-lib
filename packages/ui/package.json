@@ -1,5 +1,5 @@
 {
-  "name": "@maby-ui/tokens",
+  "name": "@maby-ui/ui",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -13,8 +13,6 @@
   "author": "Maria Gabriela Reis",
   "license": "ISC",
   "devDependencies": {
-    "@maby-ui/tokens": "*",
-    "tsup": "^6.5.0",
-    "typescript": "^4.9.4"
+    "tsup": "^6.5.0"
   }
 }

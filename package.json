@@ -1,0 +1,8 @@
+{
+  "name": "design-system",
+  "author": "Maria Gabriela Reis",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
