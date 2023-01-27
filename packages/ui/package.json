@@ -11,8 +11,10 @@
   },
   "keywords": [],
   "author": "Maria Gabriela Reis",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@maby-ui/tokens": "*",
+    "@maby-ui/ts-config": "*",
     "tsup": "^6.5.0"
   }
 }
