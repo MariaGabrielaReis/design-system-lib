@@ -23,10 +23,11 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
-    "@maby-ui/ts-config": "*",
     "@maby-ui/eslint-config": "*",
     "@maby-ui/tokens": "*",
+    "@maby-ui/ts-config": "*",
     "@maby-ui/ui": "*",
+    "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
