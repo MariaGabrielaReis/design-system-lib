@@ -1,5 +1,10 @@
-import { colors } from "@maby-ui/tokens";
+import { styled } from "./styles";
+
+const Button = styled("button", {
+  fontFamily: "$default",
+  backgroundColor: "$teal500",
+});
 
 export function App() {
-  return <h1 style={{ color: colors.teal600 }}>Hello world!</h1>;
+  return <Button>Hello world!</Button>;
 }
