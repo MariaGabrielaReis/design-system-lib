@@ -1,16 +1,12 @@
 import type { StoryObj, Meta } from "@storybook/react";
-import { Box, BoxProps } from "@maby-ui/ui";
+import { Box, BoxProps, Text } from "@maby-ui/ui";
 
 export default {
   title: "Surfaces/Box",
   component: Box,
 
   args: {
-    children: (
-      <>
-        <span>Box element</span>
-      </>
-    ),
+    children: <Text>Box element</Text>,
   },
 } as Meta<BoxProps>;
 
