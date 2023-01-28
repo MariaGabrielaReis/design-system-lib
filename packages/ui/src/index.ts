@@ -1,3 +1,3 @@
-import { colors } from '@maby-ui/tokens';
+import { colors } from "@maby-ui/tokens";
 
 console.log(colors);
