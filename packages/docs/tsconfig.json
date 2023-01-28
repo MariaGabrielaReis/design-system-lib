@@ -1,0 +1,4 @@
+{
+  "extends": "@maby-ui/ts-config/react.json",
+  "include": ["src"]
+}
