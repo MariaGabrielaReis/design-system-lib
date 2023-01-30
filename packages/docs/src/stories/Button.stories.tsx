@@ -8,10 +8,40 @@ export default {
 
   args: {
     children: "Button label",
+    variant: "primary",
+    size: "md",
+    disabled: false,
   },
 
   argTypes: {
+    children: {
+      description: "Text that will be displayed inside the button",
+      control: {
+        type: "text",
+      },
+    },
+    variant: {
+      description: "Button variants: filled, unfilled and text only",
+      options: ["primary", "secondary", "tertiary"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+    size: {
+      description: "Button sizes: small or medium",
+      options: ["sm", "md"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+    disabled: {
+      description: "Button state: if it is enabled or disabled",
+      control: {
+        type: "boolean",
+      },
+    },
     onClick: {
+      description: "Button action: show log when clicked",
       action: "click",
     },
   },
@@ -19,36 +49,21 @@ export default {
 
 export const Primary: StoryObj<ButtonProps> = {};
 
-export const Secondary: StoryObj<ButtonProps> = {
-  args: {
-    variant: "secondary",
-  },
-};
-
-export const Tertiary: StoryObj<ButtonProps> = {
-  args: {
-    variant: "tertiary",
-  },
-};
-
-export const Small: StoryObj<ButtonProps> = {
-  args: {
-    size: "sm",
-  },
-};
-
 export const WithIcon: StoryObj<ButtonProps> = {
   args: {
     children: (
       <>
-        Label <ArrowRight weight="bold" />{" "}
+        Label
+        <ArrowRight weight="bold" />
       </>
     ),
   },
-};
 
-export const Disabled: StoryObj<ButtonProps> = {
-  args: {
-    disabled: true,
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
   },
 };

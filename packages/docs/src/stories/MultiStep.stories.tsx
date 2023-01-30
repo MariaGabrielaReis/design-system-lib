@@ -10,6 +10,22 @@ export default {
     currentStep: 1,
   },
 
+  argTypes: {
+    steps: {
+      description: "Number of steps that will be displayed",
+      control: {
+        type: "number",
+      },
+    },
+    currentStep: {
+      description: "Number of current step",
+      control: {
+        type: "number",
+        min: 0,
+      },
+    },
+  },
+
   decorators: [
     Story => {
       return <Box>{Story()}</Box>;
@@ -18,9 +34,3 @@ export default {
 } as Meta<MultiStepProps>;
 
 export const Primary: StoryObj<MultiStepProps> = {};
-
-export const Full: StoryObj<MultiStepProps> = {
-  args: {
-    currentStep: 4,
-  },
-};

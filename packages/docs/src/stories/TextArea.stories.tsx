@@ -5,6 +5,26 @@ export default {
   title: "Form/Text Area",
   component: TextArea,
 
+  args: {
+    disabled: false,
+    placeholder: "Placeholder example",
+  },
+
+  argTypes: {
+    disabled: {
+      description: "TextArea state: if it is enabled or disabled",
+      control: {
+        type: "boolean",
+      },
+    },
+    placeholder: {
+      description: "Text that will be displayed as text area placeholder",
+      control: {
+        type: "text",
+      },
+    },
+  },
+
   decorators: [
     Story => {
       return (
@@ -20,14 +40,4 @@ export default {
   ],
 } as Meta<TextAreaProps>;
 
-export const Primary: StoryObj<TextAreaProps> = {
-  args: {
-    placeholder: "placeholder example",
-  },
-};
-
-export const Disabled: StoryObj<TextAreaProps> = {
-  args: {
-    disabled: true,
-  },
-};
+export const Primary: StoryObj<TextAreaProps> = {};

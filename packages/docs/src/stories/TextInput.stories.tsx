@@ -5,6 +5,34 @@ export default {
   title: "Form/Text Input",
   component: TextInput,
 
+  args: {
+    disabled: false,
+    placeholder: "Placeholder example",
+    prefix: "prefix/",
+  },
+
+  argTypes: {
+    disabled: {
+      description: "TextInput state: if it is enabled or disabled",
+      control: {
+        type: "boolean",
+      },
+    },
+    placeholder: {
+      description: "Text that will be displayed as input placeholder",
+      control: {
+        type: "text",
+      },
+    },
+    prefix: {
+      description:
+        "Text that will be displayed before input content and placeholder",
+      control: {
+        type: "text",
+      },
+    },
+  },
+
   decorators: [
     Story => {
       return (
@@ -20,20 +48,4 @@ export default {
   ],
 } as Meta<TextInputProps>;
 
-export const Primary: StoryObj<TextInputProps> = {
-  args: {
-    placeholder: "placeholder example",
-  },
-};
-
-export const Disabled: StoryObj<TextInputProps> = {
-  args: {
-    disabled: true,
-  },
-};
-
-export const WithPrefix: StoryObj<TextInputProps> = {
-  args: {
-    prefix: "prefix/",
-  },
-};
+export const Primary: StoryObj<TextInputProps> = {};
