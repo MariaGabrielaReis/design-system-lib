@@ -20,4 +20,22 @@ export const colors = {
   teal700: "#0F766E",
   teal800: "#115E59",
   teal900: "#134E4A",
+
+  green200: "#a7f3d0",
+  green300: "#6ee7b7",
+  green400: "#34d399",
+  green500: "#10b981",
+  green600: "#059669",
+  green700: "#047857",
+  green800: "#065f46",
+  green900: "#064e3b",
+
+  red200: "#fecdd3",
+  red300: "#fda4af",
+  red400: "#fb7185",
+  red500: "#f43f5e",
+  red600: "#e11d48",
+  red700: "#be123c",
+  red800: "#9f1239",
+  red900: "#881337",
 };
