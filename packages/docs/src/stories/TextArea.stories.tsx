@@ -12,7 +12,8 @@ export default {
           as={"label"}
           css={{ display: "flex", flexDirection: "column", gap: "$2" }}
         >
-          <Text size={"sm"}>Label</Text> {Story()}
+          <Text size={"sm"}>Label</Text>
+          {Story()}
         </Box>
       );
     },

@@ -24,3 +24,5 @@ export function Checkbox({ label, ...rest }: CheckboxProps) {
     </CheckboxLabelContainer>
   );
 }
+
+Checkbox.displayName = "Checkbox";
