@@ -10,7 +10,9 @@
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
-  "keywords": [],
+  "files": [
+    "dist"
+  ],
   "author": "Maria Gabriela Reis",
   "license": "MIT",
   "devDependencies": {
