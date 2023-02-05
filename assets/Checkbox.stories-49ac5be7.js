@@ -1,0 +1,2 @@
+import{C as t,B as o}from"./index-5b549eda.js";import{j as r}from"./jsx-runtime-1becbe17.js";import"./index-43ec82a8.js";import"./es.object.get-own-property-descriptor-037fa860.js";import"./index-648f2948.js";const m={title:"Form/Checkbox",component:t,args:{label:"Label example"},argTypes:{label:{description:"Text that will be displayed to the left of the checkbox",control:{type:"text"}}},decorators:[e=>r(o,{children:e()})]},p={},x=["Primary"];export{p as Primary,x as __namedExportsOrder,m as default};
+//# sourceMappingURL=Checkbox.stories-49ac5be7.js.map
